@@ -25,7 +25,7 @@ public class ArchivoDTO implements Serializable {
     private Long idArchivo;
     private String nombreArchivo;
     private String urlArchivo;
-    private Long idProyecto_Proyecto;
+    private Long idProyecto;
 
     public Long getIdArchivo() {
         return idArchivo;
@@ -51,12 +51,12 @@ public class ArchivoDTO implements Serializable {
         this.urlArchivo = urlArchivo;
     }
 
-    public Long getIdProyecto_Proyecto() {
-        return idProyecto_Proyecto;
+    public Long getIdProyecto() {
+        return idProyecto;
     }
 
-    public void setIdProyecto_Proyecto(Long idProyecto_Proyecto) {
-        this.idProyecto_Proyecto = idProyecto_Proyecto;
+    public void setIdProyecto(Long idProyecto) {
+        this.idProyecto = idProyecto;
     }
 
     @Override

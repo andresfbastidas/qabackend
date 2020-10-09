@@ -2,6 +2,10 @@ package co.edu.usbcali.wordsqa.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+
+import org.springframework.lang.NonNull;
+
 import java.util.List;
 
 

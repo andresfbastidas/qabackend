@@ -29,7 +29,6 @@ class CategoriaServiceTest {
 		
 	Categoria categoria = new Categoria();
 		categoria.setNombreCategoria("prueba 2");
-		categoria.setIdCategoria(idCategoria);
 		
 		
 		try {

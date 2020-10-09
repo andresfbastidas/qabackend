@@ -20,11 +20,11 @@ import co.edu.usbcali.wordsqa.dto.ArchivoDTO;
 */
 @Mapper
 public interface ArchivoMapper {
-    @Mapping(source = "proyecto.idProyecto", target = "idProyecto_Proyecto")
+    @Mapping(source = "proyecto.idProyecto", target = "idProyecto")
     public ArchivoDTO archivoToArchivoDTO(Archivo archivo)
         throws Exception;
 
-    @Mapping(source = "idProyecto_Proyecto", target = "proyecto.idProyecto")
+    @Mapping(source = "idProyecto", target = "proyecto.idProyecto")
     public Archivo archivoDTOToArchivo(ArchivoDTO archivoDTO)
         throws Exception;
 

@@ -14,19 +14,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 
-import co.edu.usbcali.wordsqa.domain.Anotacion;
 import co.edu.usbcali.wordsqa.domain.Archivo;
+import co.edu.usbcali.wordsqa.domain.Proyecto;
 
 @SpringBootTest
 class ArchivoServiceTest {
 	
-	private final static Long idAnotacion = 1L;
+	private final static Long idProyecto = 1L;
 	
 	@Autowired
 	ArchivoService archivoService;
 	
 	@Autowired
-	AnotacionService anotacionService;
+	ProyectoService proyectoService;
 
 	@Test
 	@DisplayName("save")
@@ -40,11 +40,11 @@ class ArchivoServiceTest {
 		archivo.setUrlArchivo("www");
 		
 		
-		 Optional<Anotacion> anotacionOptional = anotacionService.findById(idAnotacion);
-		 assertTrue(anotacionOptional.isPresent(), "la anotacion no existe");
+		 Optional<Proyecto> proyeOptional = proyectoService.findById(idProyecto);
+		 assertTrue(proyeOptional.isPresent(), "el proyecto no existe");
 		 
-		 Anotacion anotacion = anotacionOptional.get();
-		 
+		 Proyecto proyecto = proyeOptional.get();
+		 archivo.setProyecto(proyecto);
 		
 		 try {
 			 archivoService.save(archivo);
