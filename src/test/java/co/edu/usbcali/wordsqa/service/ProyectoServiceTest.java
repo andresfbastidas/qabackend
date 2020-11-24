@@ -31,7 +31,7 @@ class ProyectoServiceTest {
 	
 	@Autowired
 	UsuarioService usuarioService;
-	
+	/*
 	@Test
 	@DisplayName("save")
 	@Rollback(false)
@@ -75,6 +75,6 @@ class ProyectoServiceTest {
 		}
 	}
 	
-	
+	*/
 
 }

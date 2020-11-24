@@ -22,7 +22,7 @@ private final static Long idTipoUsuario=null;
 	
 	@Autowired
 	TipoUsuarioRepository tipoUsuarioRepository;
-	
+	/*
 	@Test
 	@DisplayName("save")
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED)
@@ -83,5 +83,5 @@ private final static Long idTipoUsuario=null;
         assertFalse(tipoUsuarios.isEmpty(), "Los  tipos de usuarios estan vacios");
 	}
 
-
+*/
 }

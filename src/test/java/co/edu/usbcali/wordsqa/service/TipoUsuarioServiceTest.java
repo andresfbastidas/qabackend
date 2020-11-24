@@ -32,7 +32,7 @@ class TipoUsuarioServiceTest {
 		
 		tipoUsuario.setEstado("Activo");
 		tipoUsuario.setIdTipoUsuario(idTipoUsuario);
-		tipoUsuario.setNombreTipoUsuario("OTRO 1");
+		tipoUsuario.setNombreTipoUsuario("LIDER DE PRUEBAS");
 		
 		try {
 			tipoUsuarioService.save(tipoUsuario);

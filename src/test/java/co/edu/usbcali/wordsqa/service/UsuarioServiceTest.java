@@ -31,6 +31,7 @@ class UsuarioServiceTest {
 	@Autowired
 	TipoUsuarioService tipoUsuarioService;
 
+	
 	@Test
 	@DisplayName("save")
 	@Rollback(false)

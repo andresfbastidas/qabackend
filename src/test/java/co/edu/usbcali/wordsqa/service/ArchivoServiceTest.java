@@ -27,7 +27,7 @@ class ArchivoServiceTest {
 	
 	@Autowired
 	ProyectoService proyectoService;
-
+/*
 	@Test
 	@DisplayName("save")
 	@Rollback(false)
@@ -53,6 +53,7 @@ class ArchivoServiceTest {
 		}
 		
 	}
+	*/
     
 	
 

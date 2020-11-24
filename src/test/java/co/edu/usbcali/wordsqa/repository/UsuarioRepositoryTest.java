@@ -29,6 +29,7 @@ UsuarioRepository usuarioRepository;
 @Autowired
 TipoUsuarioRepository tipoUsuarioRepository;
 
+/*
 @Test
 @DisplayName("save")
 @Transactional(readOnly = false, propagation = Propagation.REQUIRED)
@@ -95,5 +96,5 @@ void etest() {
     List<Usuario> usuarios = usuarioRepository.findAll();
     assertFalse(usuarios.isEmpty(), "Los usuarios esta vacio");
 }
-
+*/
 }

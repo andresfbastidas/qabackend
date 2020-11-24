@@ -29,6 +29,7 @@ class AnotacionServiceTest {
 	@Autowired
 	CategoriaService categoriaService;
 	
+	/*
 	@Test
 	@DisplayName("save")
 	@Rollback(false)
@@ -53,6 +54,6 @@ class AnotacionServiceTest {
 		}
 	}
 	
-	
+	*/
 
 }
